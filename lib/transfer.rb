@@ -16,7 +16,7 @@ end
 
 def execute_transaction
   while @status == "pending"
-   if !@sender.valid?
+   if !self.valid?
      @status = "rejected"
      puts "Transaction rejected. Please check your account balance."
    else
@@ -28,3 +28,4 @@ def execute_transaction
 end
 binding.pry
 end
+
