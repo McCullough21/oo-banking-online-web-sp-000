@@ -23,7 +23,6 @@ def execute_transaction
       @status = "rejected"
      "Transaction rejected. Please check your account balance."
   end
- end
 end
 # binding.pry
 end
